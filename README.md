@@ -3,7 +3,7 @@
 [![Docker Automated build](https://img.shields.io/docker/automated/linuxcontainers/mariadb.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/linuxcontainers/mariadb/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/linuxcontainers/mariadb.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/linuxcontainers/mariadb/)
 [![Docker Stars](https://img.shields.io/docker/stars/linuxcontainers/mariadb.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/linuxcontainers/mariadb/)
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/linuxcontainers/mariadb/latest?logo=docker&style=for-the-badge)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/linuxcontainers/mariadb/10.4.13-alpine?logo=docker&style=for-the-badge)
 
 [![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.12.0-green.svg?style=for-the-badge)](https://mariadblinux.org/)
 [![MariaDB Version](https://img.shields.io/badge/MariaDB%20version-v10.4.13-green.svg?style=for-the-badge)](https://mariadb.org/)
