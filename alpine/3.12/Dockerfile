@@ -14,7 +14,7 @@ LABEL maintainer="Peter <peter@linuxcontainers.io>" \
     org.opencontainers.image.vendor="Peter" \
     org.opencontainers.image.version="10.4.13" \
     org.opencontainers.image.url="https://hub.docker.com/r/linuxcontainers/mariadb/" \
-    org.opencontainers.image.source="https://gitlab.com/linuxcontainers/mariadb" \
+    org.opencontainers.image.source="https://github.com/linuxcontainers/mariadb" \
     org.opencontainers.image.revision=$VCS_REF \
     org.opencontainers.image.created=$BUILD_DATE
 
