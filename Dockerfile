@@ -27,7 +27,7 @@ RUN set -ex; \
 	if ! which gpg; then \
 		apt-get install -y --no-install-recommends gnupg; \
 	fi; \
-	if ! gpg --ver.devn | grep -q '^gpg (GnuPG) 1\.'; then \
+	if ! gpg --version | grep -q '^gpg (GnuPG) 1\.'; then \
 # Ubuntu includes "gnupg" (not "gnupg2", but still 2.x), but not dirmngr, and gnupg 2.x requires dirmngr
 # so, if we're not running gnupg 1.x, explicitly install dirmngr too
 		apt-get install -y --no-install-recommends dirmngr; \
@@ -54,7 +54,7 @@ RUN set -eux; \
 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; \
 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \
 	chmod +x /usr/local/bin/gosu; \
-	gosu --ver.devn; \
+	gosu --version; \
 	gosu nobody true
 
 RUN mkdir /docker-entrypoint-initdb.d
@@ -98,7 +98,7 @@ RUN set -e;\
 	{ \
 		echo 'Package: *'; \
 		echo 'Pin: release o=MariaDB'; \
-		echo 'Pin-P.devrity: 999'; \
+		echo 'Pin-Priority: 999'; \
 	} > /etc/apt/preferences.d/mariadb
 # add repository pinning to make sure dependencies from this MariaDB repo are preferred over Debian dependencies
 #  libmariadbclient18 : Depends: libmysqlclient18 (= 5.5.42+maria-1~wheezy) but 5.5.43-0+deb7u1 is to be installed
@@ -109,7 +109,7 @@ RUN set -ex; \
 	{ \
 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password password 'unused'; \
 		echo "mariadb-server-$MARIADB_MAJOR" mysql-server/root_password_again password 'unused'; \
-	} | debconf-set-selec.devns; \
+	} | debconf-set-selections; \
 	apt-get update; \
 	apt-get install -y \
 		"mariadb-server=$MARIADB_VERSION" \
@@ -124,7 +124,7 @@ RUN set -ex; \
 	chown -R mysql:mysql /var/lib/mysql /var/run/mysqld; \
 # ensure that /var/run/mysqld (used for socket and lock files) is writable regardless of the UID our mysqld instance ends up having at runtime
 	chmod 777 /var/run/mysqld; \
-# comment out a few problematic configura.devn values
+# comment out a few problematic configuration values
 	find /etc/mysql/ -name '*.cnf' -print0 \
 		| xargs -0 grep -lZE '^(bind-address|log|user\s)' \
 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user\s)/#&/'; \
