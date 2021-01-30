@@ -3,25 +3,26 @@
 [![Docker Automated build](https://img.shields.io/docker/automated/linuxcontainers/mariadb.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/linuxcontainers/mariadb/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/linuxcontainers/mariadb.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/linuxcontainers/mariadb/)
 [![Docker Stars](https://img.shields.io/docker/stars/linuxcontainers/mariadb.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/linuxcontainers/mariadb/)
-[![Docker Image Size (tag)](https://img.shields.io/docker/image-size/linuxcontainers/mariadb/10.4.13-alpine?logo=docker&style=for-the-badge)](https://hub.docker.com/r/linuxcontainers/mariadb/)
+[![Docker Image Size (tag)](https://img.shields.io/docker/image-size/linuxcontainers/mariadb/10.5.8?logo=docker&style=for-the-badge)](https://hub.docker.com/r/linuxcontainers/mariadb/)
 
-[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.12.0-green.svg?style=for-the-badge)](https://alpinelinux.org/)
-[![MariaDB Version](https://img.shields.io/badge/MariaDB%20version-v10.4.13-green.svg?style=for-the-badge)](https://mariadb.org/)
+[![Debian Version](https://img.shields.io/badge/Debian%20version-v10.7.0-green.svg?style=for-the-badge)](https://debian.org/)
+[![MariaDB Version](https://img.shields.io/badge/MariaDB%20version-v10.5.8-green.svg?style=for-the-badge)](https://mariadb.org/)
 
-This Docker image [(linuxcontainers/mariadb)](https://hub.docker.com/r/linuxcontainers/mariadb/) is based on the minimal [Alpine Linux](https://mariadb.org/).
+This Docker image [(linuxcontainers/mariadb)](https://hub.docker.com/r/linuxcontainers/mariadb/) is based on the minimal [Debian Linux](https://mariadb.org/).
 
-##### Alpine Version 3.12 (Released Jun 1, 2020)
+##### Debian 10 - Buster (Released May 9, 2020)
 
-This docker image is the base Alpine Linux. For more info on versions & support see [Releases](https://wiki.mariadblinux.org/wiki/Alpine_Linux:Releases)
 
-##### MariaDB Version 10.4.13 (Released May 12, 2020)
+This docker image is the base Debian 10 Slim Linux. For more info on versions & support see [Releases](https://wiki.debian.org/DebianStable)
 
-MariaDB 10.4 is the current stable series of MariaDB. It is an evolution of MariaDB 10.3 with several entirely new features not found anywhere else and with backported and reimplemented features from MySQL.
+##### MariaDB Version 10.5.8 (Released May 12, 2020)
+
+MariaDB 10.5 is the current stable series of MariaDB. It is an evolution of MariaDB 10.3 with several entirely new features not found anywhere else and with backported and reimplemented features from MySQL.
 
 ----
 
-## What is Alpine Linux?
-Alpine Linux is a Linux distribution built around musl libc and BusyBox. The image is only 10 MB in size and has access to a package repository that is much more complete than other BusyBox based images. This makes Alpine Linux a great image base for utilities and even production applications. Read more about Alpine Linux here and you can see how their mantra fits in right at home with Docker images.
+## What is Debian Linux?
+Debian is an operating system which is composed primarily of free and open-source software, most of which is under the GNU General Public License, and developed by a group of individuals known as the Debian project. Debian is one of the most popular Linux distributions for personal computers and network servers, and has been used as a base for several other Linux distributions.
 
 ## What is MariaDB?
 MariaDB Server is one of the most popular open source relational databases. It’s made by the original developers of MySQL and guaranteed to stay open source. It is part of most cloud offerings and the default in most Linux distributions.
