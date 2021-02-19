@@ -5,7 +5,7 @@
 [![Docker Stars](https://img.shields.io/docker/stars/linuxcontainers/mariadb.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/linuxcontainers/mariadb/)
 [![Docker Image Size (tag)](https://img.shields.io/docker/image-size/linuxcontainers/mariadb/10.5.8?logo=docker&style=for-the-badge)](https://hub.docker.com/r/linuxcontainers/mariadb/)
 
-[![Debian Version](https://img.shields.io/badge/Debian%20version-v10.7.0-green.svg?style=for-the-badge)](https://debian.org/)
+[![Debian Version](https://img.shields.io/badge/Debian%20version-v10.8.0-green.svg?style=for-the-badge)](https://debian.org/)
 [![MariaDB Version](https://img.shields.io/badge/MariaDB%20version-v10.5.8-green.svg?style=for-the-badge)](https://mariadb.org/)
 
 This Docker image [(linuxcontainers/mariadb)](https://hub.docker.com/r/linuxcontainers/mariadb/) is based on the minimal [Debian Linux](https://mariadb.org/).

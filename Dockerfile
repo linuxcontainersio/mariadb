@@ -5,7 +5,7 @@ ARG VCS_REF
 
 LABEL maintainer="Peter <peter@linuxcontainers.dev>" \
     architecture="amd64/x86_64" \
-    debian-ver.devn="10.7.0" \
+    debian-ver.devn="10.8.0" \
     mariadb-ver.devn="10.5.8" \
     build=$BUILD_DATE \
     org.opencontainers.image.title="mariadb" \
