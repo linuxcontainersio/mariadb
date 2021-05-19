@@ -5,14 +5,14 @@ ARG VCS_REF
 
 LABEL maintainer="Peter <peter@linuxcontainers.dev>" \
     architecture="amd64/x86_64" \
-    debian-ver.devn="10.8.0" \
-    mariadb-ver.devn="10.5.8" \
+    debian-ver.devn="10.9.0" \
+    mariadb-ver.devn="10.5.10" \
     build=$BUILD_DATE \
     org.opencontainers.image.title="mariadb" \
     org.opencontainers.image.descrip.devn="MariaDB Docker image running on Debian Linux" \
     org.opencontainers.image.authors="Peter <peter@linuxcontainers.dev>" \
     org.opencontainers.image.vendor="Peter" \
-    org.opencontainers.image.ver.devn="10.5.8" \
+    org.opencontainers.image.ver.devn="10.5.10" \
     org.opencontainers.image.url="https://hub.docker.com/r/linuxcontainers/mariadb/" \
     org.opencontainers.image.source="https://github.com/linuxcontainers/mariadb" \
     org.opencontainers.image.revi.devn=$VCS_REF \
@@ -89,7 +89,7 @@ RUN set -ex; \
 
 # bashbrew-architectures: amd64 arm64v8 ppc64le
 ENV MARIADB_MAJOR 10.5
-ENV MARIADB_VERSION 1:10.5.8+maria~buster
+ENV MARIADB_VERSION 1:10.5.10+maria~buster
 # release-status:Stable
 # (https://downloads.mariadb.org/mariadb/+releases/)
 
