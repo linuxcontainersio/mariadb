@@ -38,7 +38,6 @@ MariaDB the MySQL replacement \
 * `/var/lib/mysql`: Database files
 * `/var/lib/mysql/mysql-bin`: MariaDB logs
 
-
 ## Environment Variables:
 
 ### Main Mariadb parameters:
